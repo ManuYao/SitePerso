@@ -229,7 +229,7 @@ window.PROJECTS = [
     slug: 'smrp',
     n: '06',
     title: 'SmRP',
-    tag: 'PNJ de troc.',
+    tag: 'PNJ invocable.',
     kind: 'Plugin Spigot · Java',
     year: '2020',               // premier commit : février 2020, dernier : septembre 2020
     status: 'Prototype',
@@ -239,10 +239,10 @@ window.PROJECTS = [
     dim: 0.45,
     mask: ['50%', '60%'],
     pos: '50% 62%',
-    intro: 'Un PNJ de troc pour serveur de survie : échanger une ressource contre une autre, sans passer par la mine.',
+    intro: 'Un PNJ qu’on invoque par commande et qui ouvre un menu : un prototype de plugin de survie semi-RP.',
     description: [
-      'SmRP est un plugin Minecraft de survie semi-RP, imaginé pour le serveur local que je partageais avec des amis. L’idée : un PNJ qu’il faut mériter, avec des ressources précises pour le faire apparaître, et qui s’ouvre comme une boutique. On y échange une ressource contre une autre, à des taux fixes, pour avoir ses outils plus vite au lieu d’aller miner.',
-      'C’est un projet de 2020, resté à l’état de prototype : l’invocation du PNJ et le squelette du menu sont codés, mais les échanges eux-mêmes n’ont pas été implémentés.',
+      'SmRP est un plugin Minecraft de survie semi-RP, écrit en 2020 pour un serveur entre amis. Il ajoute un PNJ qu’on fait apparaître avec la commande /smrp, contre 30 blocs de diamant.',
+      'Un clic droit sur le PNJ ouvre un menu personnalisé, et un clic droit avec une horloge affiche un « niveau de vie » qui change selon l’heure de la journée. Le projet s’est arrêté au stade du prototype.',
     ],
     features: [
       'Commande /smrp : fait apparaître le PNJ (un villageois sans IA, nom visible, cloche sur la tête) contre 30 blocs de diamant',
