@@ -116,6 +116,15 @@
     update();
   }
 
+  /* ---------- E-mail affiché dans « Contact » (source unique : SITE.email) ---------- */
+  function initEmail() {
+    $$('[data-email]').forEach((a) => {
+      a.href = 'mailto:' + window.SITE.email;
+      const t = $('i', a);
+      if (t) t.textContent = window.SITE.email + ' ↗';
+    });
+  }
+
   /* ---------- Formulaire : ouvre le client mail (site 100 % statique) ---------- */
   function initForm() {
     const form = $('#contact-form');
@@ -245,6 +254,7 @@
     initReveal();
     initScrollSpy();
     initStatement();
+    initEmail();
     initForm();
     initVideoFill();
   }

@@ -5,8 +5,8 @@
 
 window.SITE = {
   name: 'Yao',
-  // ⚠️ À REMPLACER par ton adresse : c'est la destination du formulaire de contact (mailto:)
-  email: 'contact@example.com',
+  // Adresse affichée dans « Contact » et destination du formulaire (mailto:)
+  email: 'yaomanuit@gmail.com',
   github: 'https://github.com/ManuYao',
   instagram: 'https://www.instagram.com/yao.webp/',
   instagramHandle: '@yao.webp',
