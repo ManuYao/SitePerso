@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yao — Développeur web & mobile</title>
+  <meta name="description" content="Portfolio de Yao, développeur web & mobile : Flex Timer, Noctune, yao.webp, site taxi & VSL. Des apps et des sites qui bougent.">
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='32' y='48' font-size='44' font-weight='800' text-anchor='middle' fill='%23ffb43c' font-family='Impact,sans-serif'%3EY%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-page="home">
+  <a class="skip" href="#projets">Aller au contenu</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <a class="brand" href="#top" aria-label="Yao — haut de page">YAO<b>.</b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="pill" href="#projets" data-spy="projets">Projets</a>
+      <a class="pill" href="#apropos" data-spy="apropos">À propos</a>
+      <a class="pill" href="#contact" data-spy="contact">Contact</a>
+    </nav>
+    <div class="header-end">
+      <a class="pill pill--hide-sm" href="https://github.com/ManuYao" target="_blank" rel="noopener">GitHub : ManuYao</a>
+      <button class="pill menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"><span>Menu</span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" inert>
+    <nav aria-label="Menu mobile">
+      <a href="#projets">Projets</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="mobile-menu__foot">
+      <a href="https://github.com/ManuYao" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/yao.webp/" target="_blank" rel="noopener">Instagram</a>
+    </p>
+  </div>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg" aria-hidden="true">
+        <source src="video/13506092_1920_1080_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="pill pill--live">Portfolio · 2026</span></p>
+
+        <h1 class="hero__title">
+          <span class="line" style="--i:0"><span class="line__in">JE CODE</span></span>
+          <span class="line" style="--i:1"><span class="line__in"><span class="vfill" data-vfill>DES APPS</span></span></span>
+          <span class="line" style="--i:2"><span class="line__in outline">QUI<br class="mb"> BOUGENT.</span></span>
+        </h1>
+
+        <div class="hero__foot">
+          <p class="hero__lead">Développeur web &amp; mobile. J’imagine et je code des apps, des PWA et des sites — et je photographie aussi.</p>
+          <a class="pill hero__scroll" href="#projets">Scroll</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projets ===== -->
+    <section class="work" id="projets" aria-labelledby="work-title">
+      <div class="sec-head">
+        <p class="label">(01) — Projets</p>
+        <h2 class="display" id="work-title" data-reveal>Projets</h2>
+        <p class="sec-head__side" data-reveal>Quatre projets récents — de l’app sportive au salon d’écoute collectif.</p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- ===== À propos ===== -->
+    <section class="about" id="apropos" aria-labelledby="about-title">
+      <div class="sec-head">
+        <p class="label">(02) — À propos</p>
+        <h2 class="display" id="about-title" data-reveal>À propos</h2>
+      </div>
+
+      <div class="about__grid">
+        <p class="statement" data-lit>Je m’appelle Yao. Je conçois et je code des apps mobiles, des PWA et des sites web — du chrono qui change de couleur au salon d’écoute collectif, en passant par une galerie photo infinie. Quand je ne code pas, je photographie.</p>
+
+        <ol class="rows">
+          <li data-reveal><span class="rows__n">01</span><div><h3>Applications mobiles</h3><p>React Native, Expo, animations fluides. Ex. Flex Timer.</p></div></li>
+          <li data-reveal><span class="rows__n">02</span><div><h3>Sites &amp; PWA</h3><p>React, Vite, Next.js ou JavaScript vanilla, selon le besoin. Ex. Noctune, yao.webp.</p></div></li>
+          <li data-reveal><span class="rows__n">03</span><div><h3>Temps réel &amp; back-end</h3><p>Socket.IO, Supabase, PostgreSQL : comptes, rooms, notifications push.</p></div></li>
+          <li data-reveal><span class="rows__n">04</span><div><h3>Image &amp; direction visuelle</h3><p>Une identité par projet : typographie, couleur, mouvement. Photo sur @yao.webp.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="marquee" aria-label="Technologies utilisées">
+        <div class="marquee__track" aria-hidden="true">
+          <span>React Native</span><span>Expo</span><span>React</span><span>Vite</span><span>TypeScript</span><span>Next.js</span><span>Node.js</span><span>Socket.IO</span><span>Supabase</span><span>PostgreSQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+          <span>React Native</span><span>Expo</span><span>React</span><span>Vite</span><span>TypeScript</span><span>Next.js</span><span>Node.js</span><span>Socket.IO</span><span>Supabase</span><span>PostgreSQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="sec-head">
+        <p class="label">(03) — Contact</p>
+        <h2 class="display display--outline" id="contact-title" data-reveal>Parlons-en.</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__side" data-reveal>
+          <p>Un projet d’app, un site, une idée à tester&nbsp;? Écris-moi quelques lignes, on voit ensemble.</p>
+          <ul class="links">
+            <li><a href="https://github.com/ManuYao" target="_blank" rel="noopener"><span>GitHub</span><i>ManuYao ↗</i></a></li>
+            <li><a href="https://www.instagram.com/yao.webp/" target="_blank" rel="noopener"><span>Instagram</span><i>@yao.webp ↗</i></a></li>
+            <li><a href="https://flextimer.fit/" target="_blank" rel="noopener"><span>Flex Timer</span><i>flextimer.fit ↗</i></a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="contact-form" data-reveal>
+          <label class="field"><span>Nom</span><input name="nom" type="text" autocomplete="name" required></label>
+          <label class="field"><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+          <label class="field"><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+          <div class="form__row">
+            <button class="btn" type="submit">Envoyer
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">YAO<b>.</b></p>
+        <p class="footer__txt">Développeur web &amp; mobile. Des apps et des sites qui bougent.</p>
+      </div>
+      <div>
+        <h4>Projets</h4>
+        <ul id="footer-projects"></ul>
+      </div>
+      <div>
+        <h4>Ailleurs</h4>
+        <ul>
+          <li><a href="https://github.com/ManuYao" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.instagram.com/yao.webp/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://flextimer.fit/" target="_blank" rel="noopener">flextimer.fit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>© 2026 Yao — fait à la main en HTML, CSS &amp; JS.</p>
+      <a href="#top">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
