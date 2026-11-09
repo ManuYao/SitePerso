@@ -196,4 +196,33 @@ window.PROJECTS = [
       { items: [{ src: 'assets/img/covers/taxi-vsl.webp', alt: 'Maquette du site taxi — véhicule et estimation de prix', caption: 'Maquette — la page d’accueil' }] },
     ],
   },
+  {
+    slug: 'bedonline',
+    n: '05',
+    title: 'BedOnline',
+    tag: 'Plugin Minecraft.',
+    kind: 'Plugin Spigot · Java',
+    year: '2020',               // date du premier commit du dépôt
+    status: 'Dépôt privé',
+    type: 'Plugin Minecraft',
+    cover: 'assets/img/covers/bedonline.webp',
+    hover: 'assets/img/covers/bedonline.webp',
+    dim: 0.5,
+    mask: ['50%', '50%'],
+    pos: '50% 50%',
+    intro: 'Un petit plugin pour les serveurs de survie en ligne : quand un joueur va dormir, un message l’annonce.',
+    description: [
+      'BedOnline est un plugin pour serveurs Minecraft de survie en ligne. Quand un joueur se met dans un lit, un message en doré « pseudo veut dormir » est envoyé, à condition qu’au moins deux joueurs soient connectés.',
+      'Écrit en Java avec l’API Spigot (Bukkit 1.13), c’est un projet volontairement léger : une classe principale qui enregistre un écouteur sur l’événement d’entrée dans un lit, et des messages de démarrage et d’arrêt dans la console du serveur. Le dépôt est privé.',
+    ],
+    features: [
+      'Écoute l’événement PlayerBedEnterEvent de l’API Spigot',
+      'Message en doré « pseudo veut dormir » dans le chat',
+      'Ne se déclenche qu’à partir de deux joueurs connectés',
+      'Messages de démarrage et d’arrêt dans la console du serveur',
+    ],
+    stack: ['Java', 'Spigot', 'Bukkit API 1.13', 'IntelliJ IDEA'],
+    links: [],                  // dépôt privé : pas de lien public vers le code
+    gallery: [],
+  },
 ];

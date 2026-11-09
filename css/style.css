@@ -188,11 +188,14 @@ body.menu-open .site-header { background: transparent; border-bottom-color: tran
   background: var(--bg);
 }
 .card:nth-child(odd) { border-right: 1px solid var(--line); }
+/* nombre impair de projets : la dernière carte occupe toute la largeur */
+.grid > .card:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: 0; }
 
 .card__img {
   position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover;
-  opacity: 0; transform: scale(1.15); filter: brightness(var(--dim, .6));
-  transition: opacity .8s var(--ease), transform 1.6s var(--ease);
+  /* repos : taille normale, invisible. Survol : fondu rapide + zoom avant très lent (6 s) */
+  opacity: 0; transform: scale(1); filter: brightness(var(--dim, .6));
+  transition: opacity .9s var(--ease), transform 6s cubic-bezier(.25, .46, .45, .94);
 }
 .card::after { /* voile pour garder le texte lisible sur l'image */
   content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0;
@@ -232,7 +235,7 @@ body.menu-open .site-header { background: transparent; border-bottom-color: tran
 }
 
 @media (hover: hover) {
-  .card:hover .card__img, .card:focus-visible .card__img { opacity: 1; transform: scale(1.02); }
+  .card:hover .card__img, .card:focus-visible .card__img { opacity: 1; transform: scale(1.22); }
   .card:hover::after, .card:focus-visible::after { opacity: 1; }
   .card:hover .card__tag, .card:focus-visible .card__tag { -webkit-text-fill-color: #fff; color: #fff; animation-play-state: paused; }
   .card:hover .card__foot, .card:focus-visible .card__foot { color: var(--ink); }
@@ -362,6 +365,7 @@ body.menu-open .site-header { background: transparent; border-bottom-color: tran
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { padding: 8px 14px; border: 1px solid var(--line-2); border-radius: 999px; font: 700 11px/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; }
 .p-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
+.p-links:empty, .p-gallery:empty { display: none; } /* projet sans lien public / sans capture */
 
 .p-gallery { border-top: 1px solid var(--line); }
 .g-row { display: flex; justify-content: center; border-bottom: 1px solid var(--line); }
