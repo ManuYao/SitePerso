@@ -225,4 +225,34 @@ window.PROJECTS = [
     links: [],                  // dépôt privé : pas de lien public vers le code
     gallery: [],
   },
+  {
+    slug: 'smrp',
+    n: '06',
+    title: 'SmRP',
+    tag: 'PNJ de troc.',
+    kind: 'Plugin Spigot · Java',
+    year: '2020',               // premier commit : février 2020, dernier : septembre 2020
+    status: 'Prototype',
+    type: 'Plugin Minecraft · semi-RP',
+    cover: 'assets/img/covers/smrp.webp',
+    hover: 'assets/img/covers/smrp.webp',
+    dim: 0.45,
+    mask: ['50%', '60%'],
+    pos: '50% 62%',
+    intro: 'Un PNJ de troc pour serveur de survie : échanger une ressource contre une autre, sans passer par la mine.',
+    description: [
+      'SmRP est un plugin Minecraft de survie semi-RP, imaginé pour le serveur local que je partageais avec des amis. L’idée : un PNJ qu’il faut mériter, avec des ressources précises pour le faire apparaître, et qui s’ouvre comme une boutique. On y échange une ressource contre une autre, à des taux fixes, pour avoir ses outils plus vite au lieu d’aller miner.',
+      'C’est un projet de 2020, resté à l’état de prototype : l’invocation du PNJ et le squelette du menu sont codés, mais les échanges eux-mêmes n’ont pas été implémentés.',
+    ],
+    features: [
+      'Commande /smrp : fait apparaître le PNJ (un villageois sans IA, nom visible, cloche sur la tête) contre 30 blocs de diamant',
+      'Clic droit sur le PNJ : ouvre un menu personnalisé de 36 cases, avec son et fumée',
+      'Clic droit avec une horloge : affiche un « niveau de vie » de 1 à 5 selon l’heure de la journée',
+      'Tuer le PNJ fait tomber 15 blocs de diamant',
+      'Titres, sons et messages colorés en français pour guider le joueur',
+    ],
+    stack: ['Java', 'Spigot 1.15', 'Bukkit API', 'IntelliJ IDEA'],
+    links: [{ label: 'Code source', url: 'https://github.com/ManuYao/SmRP' }],
+    gallery: [],
+  },
 ];
